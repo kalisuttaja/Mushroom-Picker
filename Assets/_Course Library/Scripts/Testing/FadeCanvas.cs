@@ -16,6 +16,12 @@ public class FadeCanvas : MonoBehaviour
     private float alpha = 0.0f;
 
     private float quickFadeDuration = 0.25f;
+    //added when trying to fix error
+    public void StartFadeInFadeOutWithGap()
+    {
+        StopAllCoroutines();
+        CurrentRoutine = StartCoroutine(FadeOut(defaultDuration));
+    }
 
     private void Awake()
     {

@@ -168,7 +168,7 @@ namespace Convai.Scripts.Runtime.Addons
             float totalAnimationDuration = _fadeInDuration + _activeDuration + 2 * _slipDuration + _delay + extraDelayForNotificationEndTransition;
 
             // Start the fade animation for the canvas group
-            _fadeCanvas.StartFadeInFadeOutWithGap(_canvasGroup, _fadeInDuration, _fadeOutDuration, totalAnimationDuration);
+            _fadeCanvas.StartFadeInFadeOutWithGap();
 
             // Enqueue the notification to the active queue
             _activeUINotifications.Enqueue(uiNotification);
